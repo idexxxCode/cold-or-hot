@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Routine";
+    src: url(fonts/RoutineVariableThin-Thin.ttf) format(".ttf");
+}
+
+body,h1,p {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #FEE715;
+    font-family: 	"Courier New", "Routine", monospace;
+}
+.header {
+    height: 15vh;
+    background-color: #101820;
+    display: flex;
+    margin-bottom: 50px;
+}
+.header-text {
+    color: #FEE715;
+
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+    font-size: 48px;
+    margin: auto;
+}
+.main {
+    display: flex;
+}
+
+.indication {
+    margin-left: 50px;
+    height: 448px;
+    width: 128px;
+    background-image: linear-gradient(to top, red, 10%, blue);
+}
+
+.number-output {
+    margin: auto;
+    width: 40vw;
+    
+}
+#number-output-text {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.number-input {
+    margin: auto;
+    /*background-color: #FEE715;*/
+}
+
+.number {
+    width: fit-content;
+    padding: 40px 0;
+    font-size: 50px;
+    background-color: #FEE715;
+    border: 0;
+}
+
+#SubmitBtn {
+    max-width: 70%;
+    width: 500px;
+    height: 100px;
+    font-size: 36px;
+}
+
+.number:focus{
+    outline:none;
+}
+
+.number::-webkit-inner-spin-button {
+    opacity: 0.5;
+    color: #FEE715;
+}
+
+

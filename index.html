@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/fav.ico">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <h1 class="header-text">Горячо/холодно</h1>
+        <button type="button" id="dark">Темная тема</button>
+        </div>
+        <div></div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="indication">
+                <img src="images/termo.png" alt="" />
+            </div>
+            <div class="number-output">
+                <h1 id="number-output-text">Ни холодно, ни жарко</h1>
+            </div>
+            <div class="number-input">
+                <input type="number" class="number" id="number-input" min="0" max="100" value="0">
+                <div class="btn">
+                    <button type="submit" id="SubmitBtn">Играть</button>
+                    <button type="reset" id="ResetBtn">Сброс</button>
+                </div>
+                <div class="slider">
+                    <input type="range" id="range" oninput="range()">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
